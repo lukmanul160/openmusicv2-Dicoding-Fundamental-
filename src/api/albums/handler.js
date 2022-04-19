@@ -21,7 +21,7 @@ class AlbumsHandler {
 
       const response = h.response({
         status: "success",
-        message: "Album Success Added",
+        message: "Album berhasil ditambahkan",
         data: {
           albumId,
         },
@@ -41,7 +41,7 @@ class AlbumsHandler {
       // Server ERROR!
       const response = h.response({
         status: "error",
-        message: "Opss...Terjadi Eror pada server kami.",
+        message: "Maaf, terjadi kegagalan pada server kami.",
       });
       response.code(500);
       console.error(error);
@@ -82,7 +82,7 @@ class AlbumsHandler {
       // Server ERROR!
       const response = h.response({
         status: "error",
-        message: "Opss...Terjadi Eror pada server kami.",
+        message: "Maaf, terjadi kegagalan pada server kami.",
       });
       response.code(500);
       console.error(error);
@@ -99,7 +99,7 @@ class AlbumsHandler {
 
       return {
         status: "success",
-        message: "Album Has Been Updated",
+        message: "Album berhasil diperbarui",
       };
     } catch (error) {
       if (error instanceof ClientError) {
@@ -114,7 +114,7 @@ class AlbumsHandler {
       // Server ERROR!
       const response = h.response({
         status: "error",
-        message: "Opss...Terjadi Eror pada server kami.",
+        message: "Maaf, terjadi kegagalan pada server kami.",
       });
       response.code(500);
       console.error(error);
@@ -128,7 +128,7 @@ class AlbumsHandler {
       await this._service.deleteAlbumById(id);
       return {
         status: "success",
-        message: "Album Has Been Deleted",
+        message: "Album berhasil dihapus",
       };
     } catch (error) {
       if (error instanceof ClientError) {
@@ -143,7 +143,7 @@ class AlbumsHandler {
       // Server ERROR!
       const response = h.response({
         status: "error",
-        message: "Opss...Terjadi Eror pada server kami.",
+        message: "Maaf, terjadi kegagalan pada server kami.",
       });
       response.code(500);
       console.error(error);

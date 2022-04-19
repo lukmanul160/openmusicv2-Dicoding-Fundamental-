@@ -115,7 +115,6 @@ class PlaylistsService {
     };
 
     const result = await this._pool.query(query1);
-
     const songs = await this._pool.query(query2);
 
     const combine = {
