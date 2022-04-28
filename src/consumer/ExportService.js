@@ -1,6 +1,6 @@
 const { Pool } = require("pg");
 
-class NotesService {
+class ExportService {
   constructor() {
     this._pool = new Pool();
   }
@@ -30,4 +30,4 @@ class NotesService {
   }
 }
 
-module.exports = NotesService;
+module.exports = ExportService;

@@ -37,11 +37,11 @@ class PlaylistsService {
       text: `SELECT playlist_id from collaborations where user_id = $1`,
       values: [owner],
     };
-    const temp = await this._pool.query(queryCollab);
+    const result2 = await this._pool.query(queryCollab);
 
     let playlistId = "";
-    if (temp.rows.length) {
-      const result = temp.rows[0].playlist_id;
+    if (result2.rows.length) {
+      const result = result2.rows[0].playlist_id;
       playlistId = result;
     }
     const query = {
@@ -52,6 +52,8 @@ class PlaylistsService {
     };
 
     const result = await this._pool.query(query);
+
+    console.log();
 
     return result.rows;
   }

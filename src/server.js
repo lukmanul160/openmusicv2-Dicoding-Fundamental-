@@ -38,7 +38,7 @@ const CollaborationsValidator = require("./validator/collaborations");
 
 // activities
 const activities = require("./api/activities");
-const ActivitiesService = require("./services/postGres/ActivitiesService");
+const ActivitiesService = require("./services/postgres/ActivitiesService");
 
 // Exports
 const _exports = require("./api/exports");
