@@ -1,6 +1,6 @@
 # openmusicv2-Dicoding-Fundamental-
 
-Dicoding Submission 1 dan 2 membuat aplikasi back end untuk playlist music
+Dicoding Submission 1,2,3 complate  membuat aplikasi back end untuk playlist music
 
 installing :
 1. NPM install
